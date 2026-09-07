@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Кнопка відкриття -->
+    <button class="btn-open button-85" data-modal-open>Відкрити</button>
+
+    <!-- Backdrop + Modal -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-close" data-modal-close>✕</button>
+            <h2>Заголовок</h2>
+            <p>Вміст модального вікна...</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
