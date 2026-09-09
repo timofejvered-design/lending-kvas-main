@@ -466,11 +466,31 @@ color: #d34a2c;
   .conteiner {
     max-width: 540px;
   }
+  .conteiner.hero{
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-text, .hero-image{
+    width: 100%;
+  }
 }
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
   .conteiner {
     padding: 0 15px;
+    max-width: 100%;
   }
+  .question-title{
+    font-size: 32px;
+  }
+  .question-form{
+    width: 100%;
+  }
+  .comment{
+            font-size: 11px;
+  }
+}
+*{
+    box-sizing: border-box;
 }
