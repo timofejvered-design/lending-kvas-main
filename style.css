@@ -7,6 +7,7 @@ body {
 a{
    text-decoration: none; 
    list-style: none;
+   color: #000;
 }
 .conteiner {
     width: 1200px;
@@ -14,12 +15,17 @@ a{
     margin: auto;
 }
 
+
 .navigation-id {
     justify-content: space-between;
     align-items: center;
     display: flex;
     list-style: none;
     gap: 60px;
+        background: #000000;
+background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(0, 0, 0, 1) 100%);
+border-radius: 25px;
+padding: 25px 10px;
 }
 
 .navigation-contacts {
@@ -31,7 +37,7 @@ a{
 }
 
 .header-flex {
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     display: flex;
 }
@@ -184,8 +190,10 @@ footer a {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    background-color: rgb(124, 115, 115);
+background: #000000;
+background: linear-gradient(180deg,rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%);
     padding: 70px 0;
+    border-radius: 50px;
 }
 
 .proces-text {
@@ -293,6 +301,39 @@ li {
 .hero-text{
 animation: hero-text normal 4s ease;
 }
+
+.products-item {
+    background-color: rgb(24, 24, 24);
+    background: #FFFFFF;
+background: linear-gradient(180deg,rgba(255, 255, 255, 0.1) 51%);
+    border-radius: 25px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.youtube{
+    width: 30px;
+    height: 30px;
+   background-color: #030303;;
+   border-radius: 20px;
+}
+.social-icon:hover{
+    width: 30px;
+    height: 30px;
+   background-color: #d34a2c;;
+   border-radius: 20px;
+}
+.Inst{
+    width: 30px;
+    height: 30px;
+   background-color: #030303;;
+   border-radius: 20px;
+}
+.Facebook{
+    width: 30px;
+    height: 30px;
+   background-color: #030303;;
+   border-radius: 20px;
+}
 @keyframes hero-text  {
   0%{opacity: 0;} 
   100%{opacity: 1;}
@@ -382,6 +423,10 @@ color: #d34a2c;
     cursor: pointer;
     transition: .3s;
 }
+.navigation-contacts{
+display: none;
+opacity: 0;
+}
 
 .question-btn:hover {
     background: #b94f0c;
@@ -390,9 +435,32 @@ color: #d34a2c;
     color: #ffffff;
 }
 .footer{
-    color: #ffffff;
+background: #000000;
+background: linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%, rgba(255, 255, 255, 0.63) 48%, rgba(255, 255, 255, 0.63) 60%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     gap: 50px;
+}
+body{
+    margin: 0;
+}
+footer .container{
+    display: flex;
+    gap: 50px;
+}
+ul{ 
+    padding: 0;
+}
+ul .products-item li{
+    width: 30%;
+}
+.footer-container{
+    display: flex;
+}
+.hero-image img,
+.products-item-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
@@ -419,6 +487,16 @@ color: #d34a2c;
     color: #000;
     margin-bottom: 20px;
 }
+ .burger-btn{
+    display: none;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover{
+    color: #d34a2c;
+}
+
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
@@ -453,12 +531,102 @@ color: #d34a2c;
     padding: 28px 300px 28px 35px;
     box-sizing: border-box;
 }
-.products-items {
+  .burger-btn {
+
         display: flex;
-        justify-content: space-around;
-        /* margin-bottom: 20px; */
+
         flex-direction: column;
+
+        gap: 5px;
+
+        background: none;
+
+        border: none;
+
+        cursor: pointer;
+
+        padding: 4px;
+
     }
+
+
+
+    .burger-line {
+
+        display: block;
+
+        width: 25px;
+
+        height: 2px;
+
+        background-color: #ffffff;
+
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+    }
+
+
+
+    /* Меню заховане */
+
+    .nav-list {
+
+        display: none;
+
+    }
+
+
+
+    /* Меню відкрите — клас додає JS */
+
+    .nav.is-open .nav-list {
+
+        display: flex;
+
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 170px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 16px 20px;
+
+        background: #0e0d0d;
+
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+
+    /* Анімація кнопки коли меню відкрите */
+
+    .nav.is-open .burger-line:nth-child(1) {
+
+        transform: translateY(7px) rotate(45deg);
+
+    }
+
+
+
+    .nav.is-open .burger-line:nth-child(2) {
+
+        opacity: 0;
+
+    }
+
+
+
+    .nav.is-open .burger-line:nth-child(3) {
+
+        transform: translateY(-7px) rotate(-45deg);
+
+    }
+
 }
 
 /* Small: 576px - 767px */
@@ -473,6 +641,12 @@ color: #d34a2c;
   .hero-text, .hero-image{
     width: 100%;
   }
+  .products-items {
+        display: flex;
+        justify-content: space-around;
+        /* margin-bottom: 20px; */
+        flex-direction: column;
+    }
 }
 
 /* Extra small: 0px (320px) - 575px */

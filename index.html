@@ -6,30 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Landing-kvas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <header>
         <div class="conteiner">
             <div class="header-flex">
-                <img src="img/logo.png" alt="logo" width="320" class="logo">
-                <nav class="nav-link">
-                    <ul class="navigation-id">
-                        <li class="navigation-item"><a href="#main" class="aaaaaaaaaaaaaa">Основний контент</a></li>
-                        <li class="navigation-item"><a href="#about" class="aaaaaaaaaaaaaa">Про що сайт</a></li>
-                        <li class="navigation-item"><a href="#Products" class="aaaaaaaaaaaaaa">Товари</a></li>
-                        <li class="navigation-item"><a href="#proces" class="aaaaaaaaaaaaaa">Процес</a></li>
-                        <li class="navigation-item"><a href="#pitanya" class="aaaaaaaaaaaaaa">Питання</a></li>
+               <div class="hero-image">
+    <picture>
+        <source
+            media="(min-width: 1024px)"
+            srcset="img/hero-main.jpg.jpg"
+        >
+
+        <source
+            media="(min-width: 600px)"
+            srcset="img/hero-main.jpg.jpg"
+        >
+
+        <img
+            src="img/hero-main.jpg.jpg"
+            alt="Головне зображення квасу"
+        >
+    </picture>
+</div>
+                <nav class="nav">
+                    <ul class="navigation-id nav-list">
+                        <li class="navigation-item"><a href="#main" class="nav-link">Основний контент</a></li>
+                        <li class="navigation-item"><a href="#about" class="nav-link">Про що сайт</a></li>
+                        <li class="navigation-item"><a href="#Products" class="nav-link">Товари</a></li>
+                        <li class="navigation-item"><a href="#proces" class="nav-link">Процес</a></li>
+                        <li class="navigation-item"><a href="#pitanya" class="nav-link">Питання</a></li>
                     </ul>
                 </nav>
                 <ul class="navigation-contacts">
-                    <li><a href="https://www.instagram.com/" target="_blank"><img src="img/mdi_instagram.png" alt="inst"
-                                width="36"></a></li>
+                    <li><svg class="social-icon youtube">
+                        <use href="./imge/youtube.svg"></use>
+                    </svg></li>
                     <li><a href="https://web.telegram.org/a/" target="_blank"><img src="img/ic_baseline-telegram.png"
                                 alt="telegram" width="36"></a></li>
                     <li><a href="https://www.youtube.com/" target="_blank"><img src="img/mdi_youtube.png" alt="youtube"
                                 width="36"></a></li>
                 </ul>
+                            <button class="burger-btn" id="burger-btn" aria-label="Відкрити меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
             </div>
         </div>
     </header>
@@ -69,37 +93,111 @@
             <div class="conteiner">
                 <h2 class="products-text">Продукти</h2>
                 <ul class="products-items">
-                    <li><div class="products-item"><img src="img/product-1.jpg.png" alt="kvas" class="products-item-img">
+                    <li><div class="products-item"><picture>
+    <source
+        media="(min-width: 1024px)"
+        srcset="img/Group 1000002047.jpg"
+    >
+    <source
+        media="(min-width: 600px)"
+        srcset="img/Group 1000002047.jpg"
+    >
+    <img
+        src="img/Group 1000002047.jpg"
+        alt="kvas"
+        class="products-item-img"
+        srcset="
+            img/Group 1000002047.jpg 1x,
+            img/Group 1000002047@2x.jpg 2x,
+            img/Group 1000002047@3x.jpg 3x
+        "
+    >
+</picture>
                         <p>Класичний білий квас, 
-                            нічого зайвого</p> <br>
+                            нічого зайвого</p>
                         <button style="color: rgb(255, 255, 255); background-color: brown;" data-modal-open
                             class="button">Купити</button>
                             </div>
                     </li>
-                    <br>
-                    <li><div class="products-item"><img src="img/product-2.jpg.png" alt="kvas" class="products-item-img">
-                        <p>Чорний квас</p><br>
+
+                    <li><div class="products-item"><picture>
+    <source
+        media="(min-width: 1024px)"
+        srcset="img/Group 1000002048.jpg"
+    >
+    <source
+        media="(min-width: 600px)"
+        srcset="img/Group 1000002048.jpg"
+    >
+    <img
+        src="img/Group 1000002048"
+        alt="kvas"
+        class="products-item-img"
+        srcset="
+            img/Group 1000002048.jpg 1x,
+            img/Group 1000002048@2x.jpg 2x,
+            img/Group 1000002048@3x.jpg 3x
+        "
+    >
+</picture>
+                        <p>Чорний квас</p>
                         <button style="color: rgb(255, 255, 255); background-color: brown;" data-modal-open
                             class="button">Купити</button></div>
                     </li>
 
-                    <li class="products-item"><img src="img/product-3.jpg.png" alt="kvas" class="products-item-img">
+                    <li class="products-item"><picture>
+    <source
+        media="(min-width: 1024px)"
+        srcset="img/Group 1000002049.jpg"
+    >
+    <source
+        media="(min-width: 600px)"
+        srcset="img/Group 1000002049.jpg"
+    >
+    <img
+        src="img/Group 1000002049.jpg"
+        alt="kvas"
+        class="products-item-img"
+        srcset="
+            img/Group 1000002049.jpg 1x,
+            img/Group 1000002049@2x.jpg 2x,
+            img/Group 1000002049@3x.jpg 3x
+        "
+    >
+</picture>
                         <p>Білий квас з різноманітними 
-                            травами</p><br>
+                            травами</p>
                         <button style="color: rgb(255, 255, 255); background-color: brown;" data-modal-open
                             class="button">Купити</button>
                     </li>
 
-                    <li><div class="products-item"><img src="img/product-4.jpg.png" alt="kvas" class="products-item-img">
+                    <li><div class="products-item"><picture>
+    <source
+        media="(min-width: 1024px)"
+        srcset="img/Group 1000002050.jpg"
+    >
+    <source
+        media="(min-width: 600px)"
+        srcset="img/Group 1000002050.jpg"
+    >
+    <img
+        src="img/Group 1000002050jpg"
+        alt="kvas"
+        class="products-item-img"
+        srcset="
+            img/Group 1000002050.jpg 1x,
+            img/Group 1000002050@2x.jpg 2x,
+            img/Group 1000002050@3x.jpg 3x
+        "
+    >
+</picture>
                         <p>Білий квас з малиною 
-                            та м'ятою</p><br>
+                            та м'ятою</p>
                         <button style="color: rgb(255, 255, 255); background-color: brown;" class="button"
                             data-modal-open> Купити</button>
                             </div>
                     </li>
                 </ul>
-                <br>
-                <br>
             </div>
         </section>
         <section id="proces" class="proces">
@@ -133,12 +231,10 @@
                 </div>
 
             </div>
-            <br>
-            <br>
            <section class="question">
             <div class="conteiner">
              <h2 class="question-title">
-            Маєш питання?<br>
+            Маєш питання?
             Ми допоможемо!
         </h2>
     
@@ -156,19 +252,22 @@
         </form>
     </div>
 </section>
-    </main><br>
-    <br>
+    </main>
     <footer class="footer">
         <div class="conteiner">
+            <div class="footer-container">
         <div class="footer-contacts">
             <h2 class="pp">Контакти</h2>
                 <ul>
-                    <li><a href="https://www.instagram.com/" target="_blank"><img src="img/Inst.png" alt="inst "
-                                width="35"></a></li>
-                    <li><a href="https://www.Facebook.com/" target="_blank"><img src="img/Facebook.png"
-                                alt="inst" width="35"></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt="inst"
-                                width="35"></a></li>
+                    <li><svg class="social-icon youtube">
+                        <use href="./img/symbol-defs.svg#Inst"></use>
+                    </svg></li>
+                   <li><svg class="social-icon Facebook">
+                        <use href="./img/symbol-defs.svg#Facebook"></use>
+                    </svg></li>
+                    <li><svg class="social-icon youtube">
+                        <use href="./img/symbol-defs.svg#youtube"></use>
+                    </svg></li>
                     <li class="pp">+(380) 97 560 16 11</li>
                     <li>
                         <p class="pp">timofejvered@gmail.com</p>
@@ -184,6 +283,7 @@
                     <li><a href="#proces" class="pp">Процес</a></li>
                     <li><a href="#pitanya" class="pp">Питання</a></li>
                 </ul>
+            </div>
             </div>
             </div>
     </footer>

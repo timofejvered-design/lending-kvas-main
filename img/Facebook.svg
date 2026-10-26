@@ -1,0 +1,10 @@
+<svg viewBox="0 0 39 36" fill="none" width="34.666667" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        :root, .palette0 {color: currentColor;
+            --color0: #fff;
+            --color1: #000;
+        }
+    </style>
+    <rect fill="var(--color1, #000)" width="38.5714" height="36" rx="18" />
+    <path fill="var(--color0, #fff)" d="M20.4836 25.7142V18.688h2.3703l0.3524-2.751h-2.7227v-1.7523c0-0.7939 0.2211-1.3374 1.3605-1.3374h1.4436v-2.4526c-0.7024-0.0753-1.4084-0.1117-2.1149-0.1089-2.0952 0-3.5337 1.279-3.5337 3.6271v2.0189h-2.3549v2.751h2.3601v7.0314z" />
+</svg>
